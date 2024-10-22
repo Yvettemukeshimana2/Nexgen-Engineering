@@ -56,7 +56,7 @@ const Home: React.FC = () => {
           ></div>
         </div>
         <div className="pl-10 pt-32 z-10">
-          <h1 className="text-2xl text-white font-semibold">
+          <h1 className="text-2xl text-white font-black p-32">
             {images[currentIndex].description}
           </h1>
         </div>
