@@ -6,7 +6,7 @@
 //         MHS expertly manages every detail of your event, ensuring a seamless
 //         celebration.
 //       </h1>
-//       <a  href="/aboutus1">
+//       </aboutus1">
 //       <button className="ml-3 text-green-300 hover:text-green-900 font-semibold">
 //         Learn More
 //       </button>

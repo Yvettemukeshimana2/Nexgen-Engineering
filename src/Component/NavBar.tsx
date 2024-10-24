@@ -44,7 +44,7 @@
            </a>
          </nav>
        </div>
-     </header>
+    </header>
    );
  };
 
