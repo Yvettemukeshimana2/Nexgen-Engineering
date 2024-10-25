@@ -1,5 +1,7 @@
  import { useEffect, useState } from "react";
+ import { Link } from "react-router-dom";
  import Logo from "../assets/WhatsApp Image 2024-10-20 at 14.56.14.jpeg";
+
  const NavBar = () => {
    const [isScrolled, setIsScrolled] = useState(false);
 
@@ -27,24 +29,24 @@
            src={Logo}
            alt="Logo"
            width="100px"
-           className="flex justify-start p-0.5  ml-32"
+           className="flex justify-start p-0.5 ml-32"
          />
-         <nav className="flex ml-96 gap-10 md:bg-transparent  text-black bg-black bg-opacity-90 w-full h-full items-center justify-center">
-           <a href="/" className="hover:text-customTeal-950 ">
+         <nav className="flex ml-96 gap-10 md:bg-transparent text-black bg-black bg-opacity-90 w-full h-full items-center justify-center">
+           <Link to="/" className="hover:text-customTeal-950">
              Home
-           </a>
-           <a href="/aboutus1" className="hover:text-customTeal-950 ">
+           </Link>
+           <Link to="/aboutus1" className="hover:text-customTeal-950">
              About Us
-           </a>
-           <a href="/contactus" className="hover:text-customTeal-950">
+           </Link>
+           <Link to="/contactus" className="hover:text-customTeal-950">
              Contact
-           </a>
-           <a href="/venue" className=" hover:text-customTeal-950">
+           </Link>
+           <Link to="/venue" className="hover:text-customTeal-950">
              Services
-           </a>
+           </Link>
          </nav>
        </div>
-    </header>
+     </header>
    );
  };
 
