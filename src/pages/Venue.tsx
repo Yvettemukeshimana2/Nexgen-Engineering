@@ -4,6 +4,7 @@
  import im3 from "../assets/Pictures/Building-Information-Modeling.jpg";
  import { Link } from "react-router-dom";
  import Footer from "../Component/Footer";
+ import WhatsAppChatButton from "../Component/Whatsapchart";
 
  const services = [
    {
@@ -94,7 +95,7 @@
          <h1 className="text-3xl font-bold text-customTeal-950 mb-6">
            Our Services
          </h1>
-
+<WhatsAppChatButton/>
          <div className="grid md:grid-cols-3 grid-cols-2 pb-14 gap-2 mb-5 justify-center">
            {services.map((service, index) => (
              <div

@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
  import NavBar from "../Component/NavBar";
  import Footer from "../Component/Footer";
+ import WhatsAppChatButton from "../Component/Whatsapchart";
    
 const AppLayout = () => {
   return (
@@ -8,6 +9,7 @@ const AppLayout = () => {
      
       <NavBar />
       <div className="">{<Outlet />}</div>
+      <WhatsAppChatButton/>
       <Footer companyName="Nexgen-Eng" year={2024} />
     </div>
   );

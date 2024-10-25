@@ -1,6 +1,5 @@
 import React from "react";
-
- 
+import { motion } from "framer-motion";
 import weddingImage from "../assets/Pictures/Agricultural Heavy Machine.jpg";
 import partyImage from "../assets/Pictures/Design,manufacture&install robotics in agriculture.jpg";
 
@@ -28,7 +27,10 @@ const specialtiesData = [
 
 const Specialties: React.FC = () => {
   return (
-    <div className="max-w-6xl mx-auto  ">
+  
+    <motion.div initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }} className="max-w-6xl mx-auto  ">
       <h2 className="text-4xl font-bold text-center mt-10">Our Specialties</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -49,7 +51,7 @@ const Specialties: React.FC = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

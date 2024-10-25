@@ -2,20 +2,19 @@
   import missionImg from "../assets/Pictures/Design&Installation of manufacturing facilities 1.jpg";
   import visionImg from "../assets/Pictures/Design&Installation of manufacturing facilities 2.jpg"; // Replace with actual image paths
   import historyImg from "../assets/Pictures/Agricultural Heavy Machine.jpg"; // Replace with actual image paths
-  
+  import { motion } from "framer-motion";
 
  const AboutUs: React.FC = () => {
    return (
-     <div className="    ">
-       <div className=" p-3 shadow-md  flex space-x-10  ">
-         <section className="mb-8">
-           <div className="">
-             {/* <img
-               src={missionImg}
-               alt="Our Mission"
-               className="  w-full h-44 object-cover absoloute rounded-t"
-             /> */}
-
+     <div className="    ">   
+        <motion.div
+         initial={{ opacity: 0, y: 50 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.8 }}
+         className=" p-3 shadow-md  flex space-x-10"
+       >
+        <section className="mb-8">
+ <div className="">
              <p className="text-lg bg-gradient-to-l text-white  from-black to-customTeal-950 p-3">
                <h3 className="text-3xl font-bold mb-2 text-black">
                  Our Mission
@@ -58,7 +57,13 @@
              </div>
            </div>
          </section>
-       </div>
+       </motion.div>
+      <motion.div
+         initial={{ opacity: 0, y: 50 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.8 }}
+         
+       > 
        <h3 className="font-bold flex justify-center text-3xl pt-5">Our Core Value</h3>
        <div className=" pl-1 pr-1 flex space-x-4 text-black">
         
@@ -129,6 +134,7 @@
            </div>
          </section>
        </div>
+       </motion.div>
      </div>
    );
  };

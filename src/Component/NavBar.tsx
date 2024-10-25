@@ -18,7 +18,7 @@
      <header
        className={`fixed top-0 left-0 z-50 bg-white text-black w-full h-24 flex items-center transition-all duration-300 ${
          isScrolled
-           ? "bg-black sm:bg-opacity-75 sm:backdrop-blur-2xl"
+           ? "bg-black sm:bg-opacity-75 sm:backdrop-blur-4xl"
            : "bg-transparent"
        }`}
      >
@@ -36,7 +36,7 @@
            <a href="/aboutus1" className="hover:text-customTeal-950 ">
              About Us
            </a>
-           <a href="/contact" className="hover:text-customTeal-950">
+           <a href="/contactus" className="hover:text-customTeal-950">
              Contact
            </a>
            <a href="/venue" className=" hover:text-customTeal-950">

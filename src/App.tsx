@@ -1,11 +1,14 @@
-  // App.tsx
- import "./index.css"
+ // App.tsx
+import "./index.css";
 import { RouterProvider } from 'react-router-dom';
- import routes from './routes/Routes';
+import { ParallaxProvider } from "react-scroll-parallax";
+import routes from './routes/Routes';
 
 const App = () => {
   return (
-    <RouterProvider router={routes} />
+    <ParallaxProvider>
+      <RouterProvider router={routes} />
+    </ParallaxProvider>
   );
 };
 

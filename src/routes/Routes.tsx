@@ -2,9 +2,10 @@ import { createBrowserRouter } from "react-router-dom";
  import AppLayout from "../layout.tsx/Applayout.tsx";
  import Home from "../pages/Home.tsx";
  import Ourteam from "../pages/Ourteam.tsx";
- import Whoweare from "../pages/Whoweare.tsx";
+ 
  import AboutUs1 from "../pages/Aboutus1.tsx";
  import VenuePage from "../pages/Venue.tsx";
+ import ContactUsPage from "../pages/Contact.tsx";
  
  
 export const Errror404 = () => {
@@ -20,12 +21,14 @@ const routes = createBrowserRouter([
     children: [
       { path: "", element: <Home /> },
       { path: "ourteam", element: <Ourteam /> },
-      { path: "whoweare", element: <Whoweare /> },
+      
       { path: "aboutus1", element: <AboutUs1 /> },
+      { path: "contactus", element: <ContactUsPage/> },
     ],
   },
   {
-    path:"venue",element:<VenuePage/>
-  }
+    path: "venue",
+    element: <VenuePage />,
+  },
 ]);
 export default routes;
