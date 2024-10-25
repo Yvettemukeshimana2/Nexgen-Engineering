@@ -36,7 +36,7 @@ const teamMembers = [
 
 const TeamPage = () => {
   return (
-    <section className="temoignage" id="temoignage">
+    <section className="temoignage " id="temoignage">
       <div className="title text-center" id="white_title">
         <h2 className="text-customTeal-950 text-3xl font-bold p-4">
           Nexgen TEAM
@@ -44,8 +44,8 @@ const TeamPage = () => {
         <p className="font-semibold text-2xl">Meet Our Team</p>
       </div>
 
-      <div className="container-fluid" id="team">
-        <div className="flex flex-wrap justify-center">
+      <div className="  " id="team">
+        <div className="justify-center grid grid-cols-3 sm:grid-cols-3">
           {teamMembers.map((member) => (
             <div key={member.name} className="w-full md:w-1/5 p-4">
               <div className="our-team bg-white shadow-lg rounded-lg">

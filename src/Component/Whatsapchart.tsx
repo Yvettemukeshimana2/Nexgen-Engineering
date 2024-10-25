@@ -146,14 +146,14 @@ const faq: Record<string, string> = {
          className="fixed bounce bottom-16 right-4 bg-customGreen-700 text-white p-4 rounded-full z-50 shadow-lg hover:bg-customTeal-950 transition-colors duration-300"
          style={{ zIndex: 9999 }}
        >
-         <FaWhatsapp className="w-6 h-6 " />
+         <FaWhatsapp className="sm:w-6 sm:h-6  w-24 h-24" />
        </button>
     </div>
        
        {/* Chat Window */}
        {chatActive && (
          <div
-           className="fixed bottom-2 right-4 w-96 p-4 bg-white bg-opacity-95 border border-gray-300 rounded-lg max-h-[70vh] overflow-y-96 shadow-md z-50"
+           className="fixed bottom-2 right-4 sm:w-96 sm:p-4 bg-white bg-opacity-95 border border-gray-300 rounded-lg max-h-[70vh] overflow-y-96 shadow-md z-50"
            ref={chatContentRef}
            style={{ zIndex: 9999 }}
          >

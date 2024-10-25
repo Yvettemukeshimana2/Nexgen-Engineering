@@ -35,9 +35,9 @@
    const categories = ["Useful Links", "Services"];
 
    return (
-     <footer className="bg-gradient-to-b to-black from-gray-800 text-white py-8">
-       <div className="container mx-auto px-4">
-         <div className="flex flex-col md:flex-row md:justify-between mb-6">
+     <footer className="bg-gradient-to-b to-black from-gray-800  text-white py-8">
+       <div className="container mx-auto px-4 ">
+         <div className="grid grid-cols-4 sm:grid-cols-5 md:justify-between mb-6">
            {/* Company Info */}
            <div>
              <h2 className="text-xl font-bold">{companyName}</h2>
@@ -48,7 +48,10 @@
 
            {/* Links and Services */}
            {categories.map((category) => (
-             <div key={category} className="flex font-normal text-lg flex-col mb-6">
+             <div
+               key={category}
+               className="flex font-normal text-lg flex-col mb-6"
+             >
                <span className="text-green-200 font-normal mb-3">
                  {category}
                </span>

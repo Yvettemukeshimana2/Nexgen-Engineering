@@ -1,50 +1,99 @@
- import { useEffect, useState } from "react";
+ import { useCallback, useEffect, useState } from "react";
  import { Link } from "react-router-dom";
- import Logo from "../assets/WhatsApp Image 2024-10-20 at 14.56.14.jpeg";
+ import { Menu, X } from "lucide-react";
+ import logo from "../assets/WhatsApp Image 2024-10-20 at 14.56.14.jpeg"
 
  const NavBar = () => {
    const [isScrolled, setIsScrolled] = useState(false);
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+   // Throttled scroll handler using requestAnimationFrame
    useEffect(() => {
+     let ticking = false;
+
      const handleScroll = () => {
-       setIsScrolled(window.scrollY > 0);
+       if (!ticking) {
+         window.requestAnimationFrame(() => {
+           setIsScrolled(window.scrollY > 50);
+           ticking = false;
+         });
+         ticking = true;
+       }
      };
 
-     window.addEventListener("scroll", handleScroll);
-     return () => {
-       window.removeEventListener("scroll", handleScroll);
-     };
+     window.addEventListener("scroll", handleScroll, { passive: true });
+     return () => window.removeEventListener("scroll", handleScroll);
    }, []);
+
+   // Memoized toggle handler
+   const toggleMenu = useCallback(() => {
+     setIsMenuOpen((prev) => !prev);
+   }, []);
+
+   // Navigation items
+   const navItems = [
+     { to: "/", label: "Home" },
+     { to: "/aboutus1", label: "About Us" },
+     { to: "/contactus", label: "Contact" },
+     { to: "/venue", label: "Services" },
+   ];
 
    return (
      <header
-       className={`fixed top-0 left-0 z-50 bg-white text-black w-full h-24 flex items-center transition-all duration-300 ${
-         isScrolled
-           ? "bg-black sm:bg-opacity-75 sm:backdrop-blur-4xl"
-           : "bg-transparent"
+       className={`fixed top-0 left-0 z-50 w-full ${
+         isScrolled ? "bg-gradient-to-r text-white  from-black to-red-500 shadow-sm  rounded-lg ml-2 mr-2" : "bg-white"
        }`}
      >
-       <div className="flex bg-gradient-to-b rounded-t-sm items-center">
-         <img
-           src={Logo}
-           alt="Logo"
-           width="100px"
-           className="flex justify-start p-0.5 ml-32"
-         />
-         <nav className="flex ml-96 gap-10 md:bg-transparent text-black bg-black bg-opacity-90 w-full h-full items-center justify-center">
-           <Link to="/" className="hover:text-customTeal-950">
-             Home
+       <div className="max-w-6xl mx-auto px-4">
+         <div className="flex items-center justify-between h-16">
+           {/* Logo */}
+           <Link to="/">
+             <img
+               src= {logo}
+               alt="Logo"
+               className="h-16 w-16"
+             />
            </Link>
-           <Link to="/aboutus1" className="hover:text-customTeal-950">
-             About Us
-           </Link>
-           <Link to="/contactus" className="hover:text-customTeal-950">
-             Contact
-           </Link>
-           <Link to="/venue" className="hover:text-customTeal-950">
-             Services
-           </Link>
-         </nav>
+
+           {/* Desktop Nav */}
+           <nav className="hidden md:flex gap-8">
+             {navItems.map((item) => (
+               <Link
+                 key={item.to}
+                 to={item.to}
+                 className="text-gray-700 hover:text-teal-600 transition-colors"
+                 onClick={() => isMenuOpen && toggleMenu()}
+               >
+                 {item.label}
+               </Link>
+             ))}
+           </nav>
+
+           {/* Mobile Menu Button */}
+           <button
+             onClick={toggleMenu}
+             className="md:hidden p-2"
+             aria-label="Toggle menu"
+           >
+             {isMenuOpen ? <X className="w-20 h-20"/> : <Menu className="w-20 h-20" />}
+           </button>
+         </div>
+
+         {/* Mobile Menu */}
+         {isMenuOpen && (
+           <nav className="md:hidden py-2 bg-black flex flex-col text-white justify-center items-center shadow-lg rounded-b-lg">
+             {navItems.map((item) => (
+               <Link
+                 key={item.to}
+                 to={item.to}
+                 className="block py-2 px-4 text-white hover:text-teal-600 hover:bg-gray-50 transition-colors"
+                 onClick={toggleMenu}
+               >
+                 {item.label}
+               </Link>
+             ))}
+           </nav>
+         )}
        </div>
      </header>
    );

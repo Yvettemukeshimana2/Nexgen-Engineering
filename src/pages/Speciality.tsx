@@ -27,13 +27,15 @@ const specialtiesData = [
 
 const Specialties: React.FC = () => {
   return (
-  
-    <motion.div initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }} className="max-w-6xl mx-auto  ">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="max-w-6xl mx-auto   "
+    >
       <h2 className="text-4xl font-bold text-center mt-10">Our Specialties</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
         {specialtiesData.map((specialty, index) => (
           <div key={index} className="  p-6 rounded-lg ">
             {/* Image Section */}
