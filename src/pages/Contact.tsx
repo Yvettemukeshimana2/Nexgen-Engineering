@@ -1,5 +1,5 @@
  import React from "react";
- import bg from "../assets/Pictures/Design&installation of power plant.jpg";
+//  import bg from "../assets/Pictures/Design&installation of power plant.jpg";
  import { useForm, Controller } from "react-hook-form";
 import TeamPage from "./Ourteamofficial";
  interface ContactFormData {
