@@ -31,7 +31,7 @@ import TeamPage from "./Ourteamofficial";
    };
 
    return (
-     <div className="min-h-screen flex flex-col   pb-16 pt-3 pl-10 pr-10 ">
+     <div className="min-h-screen flex flex-col   pb-3 pt-3 pl-10 pr-10 ">
        <div className="container   mb-10 w-full bg-white rounded-lg shadow-lg p-6">
          <div className="flex flex-col md:flex-row">
            <div className="  w-96 rounded-lg text-white">
