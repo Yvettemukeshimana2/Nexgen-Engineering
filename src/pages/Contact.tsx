@@ -53,7 +53,7 @@ import TeamPage from "./Ourteamofficial";
              </div>
            </div>
 
-           <div className="flex-1 pt-24 sm:p-6">
+           <div className="flex-1 pt-24 bg-red-100 m-3 sm:p-6">
              <h3 className="text-xl font-semibold text-gray-800 mb-6">
                Send a Message
              </h3>
