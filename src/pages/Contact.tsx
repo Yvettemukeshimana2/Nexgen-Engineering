@@ -36,13 +36,13 @@ import TeamPage from "./Ourteamofficial";
            <div
              className="flex-1 bg-cover bg-center rounded-lg text-white"
              style={{
-               backgroundImage: `url(${bg})`,
+              //  backgroundImage: `url(${bg})`,
                backgroundSize: "cover",
                backgroundPosition: "center",
                height: "50vh",
              }}
            >
-             <div className="bg-customGreen inset-0 bg-gradient-to-b pb-10 from-transparent to-black bg-opacity-80 rounded-t-full flex flex-col p-2 text-center pt-20 mt-20">
+             <div className="bg-customGreen inset-0 bg-gradient-to-b pb-10 from-customTeal-950 to-black bg-opacity-80 rounded-t-full flex flex-col p-2 text-center pt-20 mt-20">
                <h2 className="text-2xl font-semibold text-white">Contact Us</h2>
                <h1 className="text-3xl mt-4 text-white">Corporate Office</h1>
                <div className="mt-6">
@@ -164,7 +164,7 @@ import TeamPage from "./Ourteamofficial";
 
                  <button
                    type="submit"
-                   className="w-full py-2 mt-4 bg-customTeal-950  text-white rounded-lg"
+                   className=" p-2 w-32 ml-20 bg-customTeal-950  text-white rounded-lg"
                  >
                    Send Message
                  </button>
