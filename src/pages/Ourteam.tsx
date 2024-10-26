@@ -65,7 +65,7 @@ import TeamPage from "./Ourteamofficial";
                    drive innovation in every project
                  </span>
                </p>
-               <div className="border-2 border-customTeal-950 hover:text-white hover:bg-yellow-700 rounded  w-32 mt-10 p-2">
+               <div className="border-2 border-customTeal-950 hover:text-white hover:bg-customTeal-950 rounded  w-32 mt-10 p-2">
                  <button className="font-bold" onClick={toggleReadMore}>
                    {isExpanded ? "Read Less" : "Read More..."}
                  </button>
