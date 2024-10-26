@@ -30,9 +30,9 @@ import TeamPage from "./Ourteamofficial";
    };
 
    return (
-     <div className="min-h-screen flex flex-col   p-32">
-       <div className="container  w-full bg-white rounded-lg shadow-lg p-6">
-         <div className="sm:flex grid grid-cols-1 md:flex-row">
+     <div className="min-h-screen    p-32">
+       <div className="container  flex flex-col w-full bg-white rounded-lg shadow-lg p-6">
+         <div className="">
            <div
              className="flex-1 bg-cover bg-center rounded-lg text-white"
              style={{
@@ -53,7 +53,7 @@ import TeamPage from "./Ourteamofficial";
              </div>
            </div>
 
-           <div className="flex-1 pt-24 bg-red-100 m-3 sm:p-6">
+           <div className="flex-1 p-10 text-black bg-red-100 mt-3 sm:p-6">
              <h3 className="text-xl font-semibold text-gray-800 mb-6">
                Send a Message
              </h3>
@@ -66,7 +66,7 @@ import TeamPage from "./Ourteamofficial";
                      rules={{ required: "Name is required" }}
                      render={({ field }) => (
                        <div className="flex-1">
-                         <label className="block text-gray-700">Name</label>
+                         <label className="block ">Name</label>
                          <input
                            {...field}
                            type="text"
@@ -94,7 +94,7 @@ import TeamPage from "./Ourteamofficial";
                      }}
                      render={({ field }) => (
                        <div className="flex-1">
-                         <label className="block text-gray-700">Email</label>
+                         <label className="block ">Email</label>
                          <input
                            {...field}
                            type="email"
@@ -123,7 +123,7 @@ import TeamPage from "./Ourteamofficial";
                    }}
                    render={({ field }) => (
                      <div>
-                       <label className="block text-gray-700">
+                       <label className="block ">
                          Contact Number
                        </label>
                        <input
