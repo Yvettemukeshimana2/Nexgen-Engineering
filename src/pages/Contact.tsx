@@ -1,5 +1,6 @@
  import React from "react";
 //  import bg from "../assets/Pictures/Design&installation of power plant.jpg";
+import ImageSlider from "./Gallery";
  import { useForm, Controller } from "react-hook-form";
 import TeamPage from "./Ourteamofficial";
  interface ContactFormData {
@@ -30,18 +31,10 @@ import TeamPage from "./Ourteamofficial";
    };
 
    return (
-     <div className="min-h-screen    p-32">
-       <div className="container  flex flex-col w-full bg-white rounded-lg shadow-lg p-6">
-         <div className="">
-           <div
-             className="flex-1 bg-cover bg-center rounded-lg text-white"
-             style={{
-              //  backgroundImage: `url(${bg})`,
-               backgroundSize: "cover",
-               backgroundPosition: "center",
-               height: "50vh",
-             }}
-           >
+     <div className="min-h-screen flex flex-col   pb-16 pt-3 pl-10 pr-10 ">
+       <div className="container   mb-10 w-full bg-white rounded-lg shadow-lg p-6">
+         <div className="flex flex-col md:flex-row">
+           <div className="  w-96 rounded-lg text-white">
              <div className="bg-customGreen inset-0 bg-gradient-to-b pb-10 from-customTeal-950 to-black bg-opacity-80 rounded-t-full flex flex-col p-2 text-center pt-20 mt-20">
                <h2 className="text-2xl font-semibold text-white">Contact Us</h2>
                <h1 className="text-3xl mt-4 text-white">Corporate Office</h1>
@@ -53,7 +46,7 @@ import TeamPage from "./Ourteamofficial";
              </div>
            </div>
 
-           <div className="flex-1 p-10 text-black bg-red-100 mt-3 sm:p-6">
+           <div className="flex-1 pt-24 sm:p-6">
              <h3 className="text-xl font-semibold text-gray-800 mb-6">
                Send a Message
              </h3>
@@ -66,7 +59,7 @@ import TeamPage from "./Ourteamofficial";
                      rules={{ required: "Name is required" }}
                      render={({ field }) => (
                        <div className="flex-1">
-                         <label className="block ">Name</label>
+                         <label className="block text-gray-700">Name</label>
                          <input
                            {...field}
                            type="text"
@@ -94,7 +87,7 @@ import TeamPage from "./Ourteamofficial";
                      }}
                      render={({ field }) => (
                        <div className="flex-1">
-                         <label className="block ">Email</label>
+                         <label className="block text-gray-700">Email</label>
                          <input
                            {...field}
                            type="email"
@@ -123,7 +116,7 @@ import TeamPage from "./Ourteamofficial";
                    }}
                    render={({ field }) => (
                      <div>
-                       <label className="block ">
+                       <label className="block text-gray-700">
                          Contact Number
                        </label>
                        <input
@@ -173,6 +166,7 @@ import TeamPage from "./Ourteamofficial";
            </div>
          </div>
        </div>
+       <ImageSlider />
        <TeamPage />
      </div>
    );
