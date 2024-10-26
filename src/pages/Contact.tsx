@@ -32,7 +32,7 @@ import TeamPage from "./Ourteamofficial";
    return (
      <div className="min-h-screen flex flex-col   p-32">
        <div className="container  w-full bg-white rounded-lg shadow-lg p-6">
-         <div className="flex flex-col md:flex-row">
+         <div className="sm:flex grid grid-cols-1 md:flex-row">
            <div
              className="flex-1 bg-cover bg-center rounded-lg text-white"
              style={{

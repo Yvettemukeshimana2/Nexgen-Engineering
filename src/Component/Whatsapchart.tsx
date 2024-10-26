@@ -153,7 +153,7 @@ const faq: Record<string, string> = {
        {/* Chat Window */}
        {chatActive && (
          <div
-           className="fixed bottom-2 right-4 sm:w-96 sm:p-4 bg-white bg-opacity-95 border border-gray-300 rounded-lg max-h-[70vh] overflow-y-96 shadow-md z-50"
+           className="fixed bottom-2 right-4 sm:w-96 p-4 bg-white bg-opacity-95 border border-gray-300 rounded-lg max-h-[70vh] overflow-y-96 shadow-md z-50"
            ref={chatContentRef}
            style={{ zIndex: 9999 }}
          >
