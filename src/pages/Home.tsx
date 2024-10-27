@@ -11,7 +11,7 @@ const images = [
   {
     src: im1,
     description:
-      "The engineering sector is highly competitive, with numerous firms vying for the same contracts, which can drive down prices and profit margins",
+      "The engineering sector is highly competitive, with numerous firms varying for the same contracts, which can drive down prices and profit margins",
   },
   {
     src: im2,
@@ -21,7 +21,7 @@ const images = [
   {
     src: im3,
     description:
-      "The engineering sector is highly competitive, with numerous firms vying for the same contracts, which can drive down prices and profit margins.",
+      "We work closely with our clients to understand their unique needs and deliver solutions that exceed expectations.",
   },
 ];
 
