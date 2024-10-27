@@ -1,7 +1,7 @@
  import React from "react";
  import { motion } from "framer-motion";
  import missionImg from "../assets/Pictures/Design&Installation of manufacturing facilities 1.jpg";
- import visionImg from "../assets/Pictures/Design&Installation of manufacturing facilities 2.jpg";
+//  import visionImg from "../assets/Pictures/Design&Installation of manufacturing facilities 2.jpg";
  import historyImg from "../assets/Pictures/Agricultural Heavy Machine.jpg";
 
  // Define interfaces for our types
