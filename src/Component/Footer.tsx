@@ -12,22 +12,22 @@
      { href: "/contact", label: "Contact", category: "Useful Links" },
      {
        href: "/venue",
-       label: "Manufacturing& Processing Industry",
+       label: "Manufacturing& Processing ",
        category: "Services",
      },
      {
        href: "/venue",
-       label: "Power plant Industry ",
+       label: "Power plant  ",
        category: "Services",
      },
      {
        href: "/venue",
-       label: "Agriculture Industry ",
+       label: "Agriculture  ",
        category: "Services",
      },
      {
        href: "/venue",
-       label: "Construction Industry",
+       label: "Construction ",
        category: "Services",
      },
    ];
