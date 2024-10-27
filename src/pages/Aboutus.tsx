@@ -27,7 +27,8 @@
    },
    {
      title: "Integrity",
-     image: visionImg,
+     image:
+       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN3OM2zBLYvMDZcLD0OmKkX15838sozp2CtQ&s",
      description:
        "We operate with transparency and honesty, ensuring that every interaction and transaction is conducted with the utmost professionalism.",
    },
@@ -39,7 +40,8 @@
    },
    {
      title: "Safety First",
-     image: visionImg,
+     image:
+       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSFb-sHVzJlhWWn3u-bQXYprtOOej-VUosvQ&s",
      description:
        "Safety is central to everything we do. We adhere to strict safety regulations and industry standards to ensure the well-being of both our team and our clients.",
    },
@@ -52,7 +54,7 @@
    description,
  }) => (
    <div className="bg-white rounded-lg shadow-md overflow-hidden">
-     <img src={image} alt={title} className="w-full h-48 object-cover" />
+     <img src={image} alt={title} className=" object-cover" />
      <div className="p-4">
        <h3 className="text-xl md:text-2xl font-bold text-customTeal-950 text-center mb-3">
          {title}
@@ -108,7 +110,7 @@
            Our Core Values
          </h3>
 
-         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-6">
            {coreValues.map((value, index) => (
              <ValueCard
                key={index}

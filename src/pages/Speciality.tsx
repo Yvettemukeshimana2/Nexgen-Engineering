@@ -21,10 +21,10 @@ const specialtiesData = [
     title: "Established Relationships: ",
     description:
       "Strong connections with suppliers, contractors, and industry stakeholders facilitate smoother project execution and resource acquisition",
-    image: partyImage,
+    image:
+      "https://www.shutterstock.com/image-photo/handshake-sunset-silhouette-park-field-260nw-2445915397.jpg",
   },
 ];
-
 const Specialties: React.FC = () => {
   return (
     <motion.div
@@ -44,7 +44,6 @@ const Specialties: React.FC = () => {
               alt={specialty.title}
               className="w-full h-64 object-cover rounded-lg mb-4"
             />
-
             {/* Text Section */}
             <h3 className="text-2xl font-semibold mb-4 text-customTeal-950">
               {specialty.title}
@@ -56,5 +55,4 @@ const Specialties: React.FC = () => {
     </motion.div>
   );
 };
-
 export default Specialties;

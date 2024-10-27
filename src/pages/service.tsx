@@ -1,19 +1,19 @@
 import React from "react";
-import im1 from "../assets/Pictures/Agricultural Heavy Machine (2).jpg";
-import im2 from "../assets/Pictures/Agricultural Heavy Machine.jpg";
+ 
+// import im2 from "../assets/Pictures/Agricultural Heavy Machine.jpg";
 import im3 from "../assets/Pictures/Building-Information-Modeling.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const services = [
   {
-    img: im1,
+    img: "https://rodem.com/wp-content/uploads/2023/06/Skid-Design.jpg",
     title: "Plant systems design & installations",
     description: " ",
     link: "/services/wedding-planning",
   },
   {
-    img: im2,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlK_ZNNhuafGAdAPTIVTCp0uPJ3-AGluhH4w&s",
     title: "Industrial machinery installations",
     description: "",
     link: "/services/corporate-events",
@@ -46,7 +46,7 @@ const OurServices: React.FC = () => {
             <img
               src={service.img}
               alt={service.title}
-              className="rounded mb-3 w-full h-32 object-cover"
+              className="rounded mb-3 w-full h-48 object-cover"
             />
             <h2 className="font-semibold text-xl mb-2">{service.title}</h2>
             <p className="text-center mb-3">{service.description}</p>
