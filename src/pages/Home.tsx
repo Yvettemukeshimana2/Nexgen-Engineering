@@ -37,9 +37,9 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       {/* Image Slider Section */}
-      <div className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+      <div className="relative h-screen w-full  flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={images[currentIndex].src}
@@ -47,7 +47,6 @@ const Home: React.FC = () => {
             className="object-cover w-full h-full duration-500 ease-in-out"
           />
 
-         
           <div
             className="absolute inset-0 bg-black"
             style={{
@@ -56,16 +55,16 @@ const Home: React.FC = () => {
           ></div>
         </div>
         <div className="pl-10 pt-32 z-10">
-          <h1 className="text-2xl text-white font-black p-32">
+          <h1 className=" text-white sm:text-3xl text-5xl font-black p-32">
             {images[currentIndex].description}
           </h1>
         </div>
       </div>
-          <AboutUs />
-     
+      <AboutUs />
+
       <OurServices />
-     
-      <Specialties/>
+
+      <Specialties />
       <OurProcess />
     </div>
   );
