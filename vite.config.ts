@@ -7,6 +7,9 @@
      postcss: "./postcss.config.js",
    },
    build: {
+     
+       chunkSizeWarningLimit: 1000, // Set limit to 1000 kB
+      
      rollupOptions: {
        output: {
          assetFileNames: "assets/[name]-[hash][extname]",

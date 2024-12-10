@@ -73,9 +73,8 @@
 
    const content = {
      mission:
-       "To deliver innovative and sustainable mechanical and MEP engineering solutions that enhance the efficiency and performance of our clients' projects. We are committed to providing exceptional service while adhering to the highest standards of quality, safety, and integrity.",
-     vision:
-       "To be recognized as a leader in mechanical and MEP engineering, known for our commitment to excellence, innovation, and sustainability. We aim to set industry benchmarks through cutting-edge technology and practices that not only meet but exceed client expectations.",
+       " To deliver innovative and sustainable Manufacturing, Mechanical and MEP engineering solutions that enhance the efficiency and performance of our clients&#39; projects. We are committed to providing exceptionalservice while adhering to the highest standards of quality, safety, andintegrity. Through a collaborative approach, we empower our team andpartners to drive innovation and excellence in every project.",
+     vision: "To be a recognized leader in manufacturing, mechanical, and MEP engineering solutions, celebrated for our unwavering commitment to excellence, innovation, and sustainability. We aspire to set industry benchmarks through the adoption of cutting-edge technology and practices, consistently exceeding client expectations while making a positive and lasting impact on the communities we serve.",
    };
 
    return (

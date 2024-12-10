@@ -3,82 +3,24 @@
  import icon1 from "../assets/WhatsApp Image 2024-10-20 at 14.56.14.jpeg";
  import Avatar from "../assets/WhatsApp Image 2024-10-20 at 14.56.14.jpeg";
  import { motion } from "framer-motion";
-
- // Mock data for FAQs and related questions
-// Mock data for FAQs and related questions in the specified industries
-const relatedQuestions: Record<string, string[]> = {
-  "What services do you offer in construction?": [
-    "What are your construction site safety measures?",
-    "Do you provide equipment for construction?",
-    "What types of construction projects do you handle?",
-  ],
-  "What services do you offer in agriculture?": [
-    "Do you offer irrigation solutions?",
-    "What types of agricultural projects do you support?",
-    "Can you help with livestock management?",
-  ],
-  "What services do you offer in power plants?": [
-    "Do you handle power plant maintenance?",
-    "What safety measures are in place for power plants?",
-  ],
-  "What services do you offer in manufacturing?": [
-    "Do you assist with production line setup?",
-    "What manufacturing equipment can you provide?",
-    "Can you support quality control processes?",
-  ],
-  "What are your construction site safety measures?": [
-    "How do you handle on-site emergencies?",
-    "Are your workers certified for hazardous work?",
-  ],
-  "Do you provide equipment for construction?": [
-    "What equipment do you supply?",
-    "Do you have heavy machinery available?",
-  ],
-  "Do you offer irrigation solutions?": [
-    "Can you assist with water management?",
-    "Do you offer soil testing services?",
-  ],
-  "Do you handle power plant maintenance?": [
-    "What maintenance services are available?",
-    "Can you provide emergency repair services?",
-  ],
-  "Do you assist with production line setup?": [
-    "What are the costs for setting up a line?",
-    "Do you offer training for line operators?",
-  ],
-};
-
 const faq: Record<string, string> = {
-  "What services do you offer in construction?":
-    "We offer project management, site safety inspections, and heavy equipment rental for construction projects.",
-  "What services do you offer in agriculture?":
-    "Our services include crop management, soil analysis, and modern irrigation solutions.",
-  "What services do you offer in power plants?":
-    "We provide plant setup, equipment maintenance, and safety assessments for power plants.",
-  "What services do you offer in manufacturing?":
-    "We support production line setup, quality assurance, and provide various machinery.",
-  "What are your construction site safety measures?":
-    "Our safety measures include regular site inspections, worker certifications, and emergency protocols.",
-  "Do you provide equipment for construction?":
-    "Yes, we offer heavy machinery and tools for construction projects, including cranes and excavators.",
-  "Do you offer irrigation solutions?":
-    "Yes, we provide drip and sprinkler irrigation systems designed for optimal water usage.",
-  "Do you handle power plant maintenance?":
-    "We handle routine maintenance, emergency repairs, and system efficiency assessments for power plants.",
-  "Do you assist with production line setup?":
-    "Yes, we offer end-to-end setup, including equipment installation and operator training for production lines.",
-  "What types of construction projects do you handle?":
-    "We handle residential, commercial, and industrial construction projects.",
-  "Can you help with livestock management?":
-    "Yes, we provide expertise in animal care, feed optimization, and livestock health monitoring.",
-  "What manufacturing equipment can you provide?":
-    "We provide machinery for packaging, assembly, and quality control in manufacturing plants.",
-  "What are your working hours?":
-    "We operate 24/7 to support all industry requirements and emergencies.",
-  "What is your cancellation policy?":
-    "You can cancel services up to 48 hours before the scheduled time.",
-  "How do you handle on-site emergencies?":
-    "We have trained emergency responders and first-aid equipment on every construction site.",
+  "What services does NexGen Engineering Ltd offer?":
+    "NexGen Engineering Ltd specializes in manufacturing spacecraft, watercraft, land-operational machinery, and metal fabrication. The company offers comprehensive mechanical engineering solutions, including plant system design and installations, industrial machinery setup, engineering consultancy, logistics, plant automation, heavy machinery maintenance, reliability services, and the supply of engineering materials and equipment.",
+
+  "How do I initiate a project with NexGen Engineering Ltd?":
+    "You can initiate a project by contacting their Customer Services team via phone (250789319155/250798584384) or email (nexgene24@gmail.com ) for a preliminary discussion and subsequent quote or proposal",
+
+  " What is your commitment to quality and safety?":
+    " NexGen Engineering Ltd is committed to delivering solutions that meet the highest standards of quality and safety, using extensive experience and cutting-edge expertise",
+
+  "Can you handle projects of any size and complexity?":
+    "Yes, we possess the expertise to undertake projects of any scale and complexity. Our capabilities extend to manufacturing projects, including the production of spacecraft, watercraft, and land-operational machinery. Additionally, we excel in executing commercial infrastructure projects,such as hotel transformations, factory expansions, educational facility upgrades, hospitals and theconstruction of bridges.",
+
+  " What kind of support do you offer?":
+    "We offer 24/7 support for all emergency inquiries, and we have a dedicated customer service team available during business hours (Monday – Saturday: 6.00am – 11.00pm)",
+
+  " Do you provide residential services as well?":
+    "Yes, NexGen Engineering Ltd also offers residential engineering solutions, including reliable plumbing, heating systems, HVAC (Heating, Ventilation, and Air Conditioning efficient pumpingstations, and booster sets to enhance water pressure",
 };
 
  const WhatsAppChatButton: React.FC = () => {
@@ -98,11 +40,6 @@ const faq: Record<string, string> = {
        ...prevConversation,
        { question, answer },
      ]);
-
-     const updatedRemainingQuestions = remainingQuestions.filter(
-       (q) => q !== question && !relatedQuestions[question]?.includes(q)
-     );
-     setRemainingQuestions(updatedRemainingQuestions);
    };
 
    const handleSelectAnotherQuestion = () => {
@@ -127,7 +64,7 @@ const faq: Record<string, string> = {
      <div className="fixed">
        <div className="">
       <style>
-        {`
+        {/* {`
           @keyframes bounce {
             0%, 100% {
               transform: translateY(0);
@@ -139,7 +76,7 @@ const faq: Record<string, string> = {
           .bounce {
             animation: bounce 1.5s infinite;
           }
-        `}
+        `} */}
       </style>
       <button
          onClick={() => setChatActive(!chatActive)}
@@ -167,7 +104,7 @@ const faq: Record<string, string> = {
              <div className="flex items-center justify-between mb-4 bg-gray-100 p-2 rounded-lg">
                <div className="flex items-center space-x-2">
                  <img
-                   src={icon1} // Replace with actual image
+                   src={icon1}  
                    alt="Profile"
                    className="w-10 h-10 rounded-full"
                  />
@@ -183,11 +120,8 @@ const faq: Record<string, string> = {
                  &#x2715;
                </button>
              </div>
-
-             {/* Chat Messages */}
              <div className="text-sm text-gray-700 mb-4">
                <div className="flex flex-col space-y-2">
-                 {/* Assistant Initial Messages */}
                  <div className="self-start text-lg text-black rounded-lg">
                    <div className="not-italic text-sm pt-6 pb-2">
                      <motion.div
@@ -235,7 +169,7 @@ const faq: Record<string, string> = {
                            {entry.question}
                          </p>
                          <p className="text-xs text-gray-400 text-right mt-1">
-                           11:27 PM
+                           12:00 PM
                          </p>
                        </motion.div>
                      </div>
@@ -256,42 +190,22 @@ const faq: Record<string, string> = {
                          <p className="bg-customTeal-950 shadow-sm rounded-md text-white text-sm p-2">
                            {entry.answer}
                          </p>
-                         <p className="text-xs text-gray-400 mt-1">11:27 PM</p>
+                         <p className="text-xs text-gray-400 mt-1">12:00 PM</p>
                        </motion.div>
                      </div>
-
-                     {/* Related Sub-Questions */}
-                     {relatedQuestions[entry.question]?.length > 0 && (
-                       <div className="flex flex-col mt-2 space-y-1">
-                         <p className="text-sm font-semibold">
-                           Related Questions:
-                         </p>
-                         {relatedQuestions[entry.question]?.map((q, idx) => (
-                           <button
-                             key={idx}
-                             onClick={() => handleSelectQuestion(q)}
-                             className="text-customTeal-950 text-left hover:underline"
-                           >
-                             {q}
-                           </button>
-                         ))}
-                       </div>
-                     )}
                    </div>
                  ))}
 
                  {/* Ask Another Question Button */}
                  {conversation.length > 0 &&
-                   !relatedQuestions[
-                     conversation[conversation.length - 1].question
-                   ]?.length && (
+                   
                      <button
                        onClick={handleSelectAnotherQuestion}
                        className="text-customTeal-950 text-sm mt-4 hover:underline transition-colors duration-300"
                      >
                        Ask another question
                      </button>
-                   )}
+                   }
 
                  {/* Initial Questions */}
                  {!conversation.length && remainingQuestions.length > 0 && (
@@ -310,7 +224,6 @@ const faq: Record<string, string> = {
                  )}
                </div>
              </div>
-
              {/* Input Section */}
              <div className="self-start text-black rounded-lg mt-4">
                <p className="mt-4 text-gray-600 text-xs">
@@ -334,5 +247,4 @@ const faq: Record<string, string> = {
      </div>
    );
  };
-
  export default WhatsAppChatButton;
