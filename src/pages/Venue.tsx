@@ -93,7 +93,7 @@
  const OurServices: React.FC = () => {
    return (
      <div>
-       <div className="flex flex-col items-center mt-10 z-20">
+       <div className="flex flex-col items-center mt-24 z-20">
          <h1 className="text-3xl font-bold text-customTeal-950 mb-6">
            Our Services
          </h1>

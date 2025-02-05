@@ -23,13 +23,11 @@ const routes = createBrowserRouter([
       { path: "ourteam", element: <Ourteam /> },
       { path: "aboutus1", element: <AboutUs1 /> },
       { path: "contactus", element: <ContactUsPage /> },
-      { path:"/services/:serviceId", element:<ServiceDetail />}
+      { path:"/services/:serviceId", element:<ServiceDetail />},
+       { path: "venue", element: <VenuePage />},
     ],
   },
 
-  {
-    path: "venue",
-    element: <VenuePage />,
-  },
+ 
 ]);
 export default routes;

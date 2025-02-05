@@ -41,7 +41,7 @@
    return (
      <header
        className={`fixed top-0 left-0 z-50 w-full ${
-         isScrolled ? "bg-gradient-to-r text-white  from-black to-red-500 shadow-sm  rounded-lg ml-2 mr-2" : "bg-white"
+         isScrolled ? "bg-gradient-to-r text-white font-bold  from-black to-red-500 shadow-sm  rounded-lg ml-2 mr-2" : ""
        }`}
      >
        <div className="max-w-6xl mx-auto px-4">
