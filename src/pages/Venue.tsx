@@ -8,14 +8,14 @@
 
  const services = [
    {
-     id: "1",
+    
      img: "https://rodem.com/wp-content/uploads/2023/06/Skid-Design.jpg",
      title: "Plant systems design & installations",
      description: " ",
      link: "/services/1",
    },
    {
-     id: "2",
+  
      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlK_ZNNhuafGAdAPTIVTCp0uPJ3-AGluhH4w&s",
      title: "Industrial machinery installations",
      description: "",
